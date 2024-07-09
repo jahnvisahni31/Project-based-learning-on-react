@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+:root{
+    --whiteColor: #ffffff;
+    --blackColor: #111b21;
+    --mainColor: #008069;
+    --greenColor: #25d366;
+    --gayColor: #8696a0;
+    --settingColor: #3b4a54;
+
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+
+}
+body{
+    font-family: 'Inter', 'sans-serif';
+    font-weight: 400;
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    background-color: #f2eadf;
+}
+.container{
+    position: relative;
+    width: 34rem;
+    height: 60rem;
+    background-color: var(--whiteColor);
+    box-shadow: 0 .5rem .5rem rgba(0 0 0 / .15);
+    overflow: hidden;
+
+}
+/*start header selection*/ 
+.header{
+    position: relative;
+    background-color: var(--mainColor);
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-logo{
+    color: var(--whiteColor);
+    font-weight: normal;
+    font-size: 1.8rem;
+
+}
+.header-icons{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    color: var(--whiteColor);
+    font-size: 1.6rem;
+}
+.header-icons i{
+    cursor: pointer;
+}
+/* end header selection*/
+
+/*start tab selection*/
+.tabs{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    background-color: var(--mainColor);
+    padding: .5rem 0;
+    box-sizing: 0 .2rem .5rem rgba(0 0 0 / .15);
+}
+.tabs li{
+    position: relative;
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: var(--whiteColor);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    opacity: .75;
+    cursor: pointer;
+}
+.tabs li:first-child{
+    flex-basis: 13%;
+}
+.tabs li:not(:first-child){
+    flex-basis: 33.33%;
+}
+.tabs li.active{
+    opacity: 1;
+    transform: all .5s ease-in-out;
+}
+.tabs li.active::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -.5rem;
+    width: 100%;
+    height: .2rem;
+    background-color: var(--whiteColor);
+}
+.tabs li i{
+    font-size: 1.6rem;
+}
+.tabs li .num{
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    display: flex;
+}
+/* end tab selection*/
