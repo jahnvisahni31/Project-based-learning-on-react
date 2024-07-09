@@ -34,7 +34,7 @@ This repository is designed to help you learn React by building two popular appl
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/project-based-learning-on-react.git
+    git clone https://github.com/jahnvisahni31/project-based-learning-on-react.git
     cd project-based-learning-on-react/spotify-clone
     ```
 
@@ -66,7 +66,7 @@ This repository is designed to help you learn React by building two popular appl
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/project-based-learning-on-react.git
+    git clone https://github.com/jahnvisahni31/project-based-learning-on-react.git
     cd project-based-learning-on-react/whatsapp-clone
     ```
 
